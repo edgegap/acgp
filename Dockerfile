@@ -8,5 +8,6 @@ RUN python3 -m pip install requests
 COPY . /app
 
 EXPOSE 80
+RUN chmod +x /app/entrypoint.sh
 
 CMD ["/app/entrypoint.sh"]
